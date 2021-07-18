@@ -56,7 +56,7 @@ def decrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step:
 
 str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 str2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-target = "HELLO MOTHERFUCKER"
+target = "HELLO WORLD"
 init_step = 1
 reset_step = 4
 print(target)
