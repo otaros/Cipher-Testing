@@ -1,4 +1,7 @@
 #make by Otaros with Love <3 <3 <3
+#just for learning purpose
+#not for commerce
+#pls use with love :> :3 
 def encrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step: int) -> str:
     #processing value
     step = base_step #save the step for the reset
