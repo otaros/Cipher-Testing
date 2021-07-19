@@ -25,14 +25,14 @@ def encrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step:
         pos = decode1.find(i)           #take position
         pos += step                     #plus step -> new position
         if (pos > len(decode2) - 1):    #roll back if pos is out of decode2 range
-            pos = len(decode2) - pos
+            pos = abs(len(decode2) - pos)       #just take abs to prevent negative value
         result += decode2[pos]          #take the encrypted char
         step += 1                       #increase the step
         count += 1                      #counting to reset
     return result
 
 
-'''def decrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step:int) -> str:
+def decrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step:int) -> str:
     #processing value
     step = base_step
     result = ""
@@ -54,12 +54,12 @@ def encrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step:
         pos = decode2.find(i)               #find position
         pos -= step                         #minus step -> previous position
         if (pos < 0):                       #turn around if out of range
-            pos = len(decode1) + pos
+            pos = abs(len(decode1) + pos)   #same reason for decrypt
         result += decode1[pos]              #take the decrypted char
         step += 1                           #increase step
         count += 1                          #counting
     return result
-'''
+
 #decrypting still in develope
 #testing
 str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
