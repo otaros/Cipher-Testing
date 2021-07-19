@@ -32,7 +32,7 @@ def encrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step:
     return result
 
 
-def decrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step:int) -> str:
+'''def decrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step:int) -> str:
     #processing value
     step = base_step
     result = ""
@@ -59,7 +59,8 @@ def decrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step:
         step += 1                           #increase step
         count += 1                          #counting
     return result
-
+'''
+#decrypting still in develope
 #testing
 str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 str2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
