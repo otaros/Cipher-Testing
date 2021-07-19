@@ -62,6 +62,7 @@ def decrypt(target: str, decode1: str, decode2: str, base_step: int, reset_step:
 
 #decrypting still in develope
 #testing
+#you can change two processing string to make the encrypting more security
 str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 str2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 target = "HELLO WORLD"
