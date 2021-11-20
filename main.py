@@ -70,6 +70,6 @@ init_step = 1
 reset_step = 4
 print(target)
 en = encrypt(target, str1, str2, init_step,reset_step)
-print(en)
+print(en) #IGOPQ AUZRL
 de = decrypt(en, str1, str2, init_step,reset_step)
 print(de)
